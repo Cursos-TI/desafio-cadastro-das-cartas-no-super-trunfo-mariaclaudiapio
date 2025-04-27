@@ -16,7 +16,18 @@ int main()
     puts("");
 
     // Declaração das Variáveis
+    char estado; // armazena a letra escolhida pelo usuário (de A a H)
+    char codigoDaCarta[3]; // armazena o código da carta (no formato letra + inteiro de 02 dígitos - ex: A01, B03)
+    char cidade[30]; // armazena o nome da cidade inserido pelo usuário
+    int populacao; // armazena a população da cidade inserida pelo usuário
+    float areaQuadrada; // armazena a área da cidade, medida em kilômetros quadrados
+    float pib; // armazena o produto interno bruto da cidade escolhida pelo usuário
+    int pontosTuristicos; // armazena o número de pontos turísticos da cidade escolhida pelo usuário
+
     
+
+
+
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
