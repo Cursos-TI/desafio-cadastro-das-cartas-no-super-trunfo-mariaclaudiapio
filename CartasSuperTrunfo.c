@@ -6,7 +6,18 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
-int main() {
+int main() 
+{
+    // Cabeçalho
+    puts("");
+    puts("****************************************************");
+    puts("**   Desafio Super Trunfo de Países - Iniciante   **");
+    puts("****************************************************");
+    puts("");
+
+    // Declaração das Variáveis
+    
+
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
