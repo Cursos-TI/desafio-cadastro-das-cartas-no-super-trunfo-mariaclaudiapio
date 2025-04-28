@@ -1,5 +1,50 @@
 #include <stdio.h>
 
+int main()
+{
+    // Cabeçalho
+    puts("");
+    puts("****************************************************");
+    puts("**   Desafio Super Trunfo de Países - Iniciante   **");
+    puts("****************************************************");
+    puts("");
+
+    // Declaração das Variáveis
+    char estado1; // armazena a letra escolhida pelo usuário (de A a H)
+    char estado2; // armazena a letra escolhida pelo usuário (de A a H)
+    char codigoDaCarta1[3];
+    char codigoDaCarta2[3];
+
+    // Entrada de dados (1ª carta)
+    puts("Olá! Digite o que for solicitado a seguir, para preenchimento da 1ª carta.");
+    puts("Digite uma letra de 'A' a 'H' (em maiúsculo):");
+    scanf(" %c", &estado1);
+    puts("Digite novamente a letra escolhida, seguida de um número de 01 a 04 (ex. A01, B03)");
+    scanf("%s", codigoDaCarta1);
+
+     // Entrada de dados (2ª carta)
+     puts("Olá! Digite o que for solicitado a seguir, para preenchimento da 2ª carta.");
+     puts("Digite uma letra de 'A' a 'H' (em maiúsculo):");
+     scanf(" %c", &estado2);
+     puts("Digite novamente a letra escolhida, seguida de um número de 01 a 04 (ex. A01, B03)");
+     scanf("%s", codigoDaCarta2);
+
+     // Saída de dados (1ª carta)
+     puts("Carta 1:");
+     printf("Estado: %c\n", estado1);
+     printf("Código: %s\n", codigoDaCarta1);  
+
+     // Saída de dados (2ª carta)
+     puts("Carta 2:");
+     printf("Estado: %c\n", estado2);
+     printf("Código: %s\n", codigoDaCarta2); 
+
+
+    return 0;
+}
+/*
+#include <stdio.h>
+
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
@@ -105,3 +150,4 @@ int main()
 
     return 0;
 }
+*/
