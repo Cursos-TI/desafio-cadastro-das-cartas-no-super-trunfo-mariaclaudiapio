@@ -1,78 +1,17 @@
-/* #include <stdio.h>
-
-int main()
-{
-    // Cabeçalho
-    puts("");
-    puts("****************************************************");
-    puts("**   Desafio Super Trunfo de Países - Iniciante   **");
-    puts("****************************************************");
-    puts("");
-
-    // Declaração das Variáveis
-    char estado1; // armazena a letra escolhida pelo usuário (de A a H)
-    char estado2; // armazena a letra escolhida pelo usuário (de A a H)
-    char codigoDaCarta1[3]; // armazena o código da carta (no formato letra + número de 01 a 04 - ex: A01, B03)
-    char codigoDaCarta2[3]; // armazena o código da carta (no formato letra + número de 01 a 04 - ex: A01, B03)
-    char cidade1[30];
-    char cidade2[30];
-
-    // Entrada de dados (1ª carta)
-    puts("Olá! Digite o que for solicitado a seguir, para preenchimento da 1ª carta.");
-    puts("Digite uma letra de 'A' a 'H' (em maiúsculo):");
-    scanf(" %c", &estado1);
-    puts("Digite novamente a letra escolhida, seguida de um número de 01 a 04 (ex. A01, B03)");
-    scanf("%s", codigoDaCarta1);
-    puts("Digite o nome da cidade:");
-    scanf("%s", cidade1);
-    puts("");
-
-     // Entrada de dados (2ª carta)
-     puts("Agora é a vez do preenchimento da 2ª carta.");
-     puts("Digite uma letra de 'A' a 'H' (em maiúsculo):");
-     scanf(" %c", &estado2);
-     puts("Digite novamente a letra escolhida, seguida de um número de 01 a 04 (ex. A01, B03)");
-     scanf("%s", codigoDaCarta2);
-     puts("Digite o nome da cidade:");
-     scanf("%s", cidade2);
-     puts("");
-
-     // Saída de dados (1ª carta)
-     puts("Carta 1:");
-     printf("Estado: %c\n", estado1);
-     printf("Código: %s\n", codigoDaCarta1);
-     printf("Nome da Cidade: %s\n", cidade1);
-     puts("");  
-
-     // Saída de dados (2ª carta)
-     puts("Carta 2:");
-     printf("Estado: %c\n", estado2);
-     printf("Código: %s\n", codigoDaCarta2);
-     printf("Nome da Cidade: %s\n", cidade2);
-
-    return 0;
-}
-/*
 #include <stdio.h>
-
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
 int main() 
 {
     // Cabeçalho
-    puts("");
-    puts("****************************************************");
-    puts("**   Desafio Super Trunfo de Países - Iniciante   **");
-    puts("****************************************************");
-    puts("");
+    printf("\n");
+    printf("****************************************************\n");
+    printf("**   Desafio Super Trunfo de Países - Iniciante   **\n");
+    printf("****************************************************\n");
+    printf("\n");
 
     // Declaração das Variáveis (1ª carta)
     char estado1; // armazena a letra escolhida pelo usuário (de A a H)
-    char codigoDaCarta1[3]; // armazena o código da carta (no formato letra + número de 01 a 04 - ex: A01, B03)
+    char codigoDaCarta1[4]; // armazena o código da carta (no formato letra + número de 01 a 04 - ex: A01, B03)
     char cidade1[30]; // armazena o nome da cidade inserido pelo usuário
     int populacao1; // armazena a população da cidade inserida pelo usuário
     float areaQuadrada1; // armazena a área da cidade, medida em kilômetros quadrados
@@ -81,7 +20,7 @@ int main()
 
      // Declaração das Variáveis (2ª carta)
      char estado2; // armazena a letra escolhida pelo usuário (de A a H)
-     char codigoDaCarta2[3]; // armazena o código da carta (no formato letra + número de 01 a 04 - ex: A01, B03)
+     char codigoDaCarta2[4]; // armazena o código da carta (no formato letra + número de 01 a 04 - ex: A01, B03)
      char cidade2[30]; // armazena o nome da cidade inserido pelo usuário
      int populacao2; // armazena a população da cidade inserida pelo usuário
      float areaQuadrada2; // armazena a área da cidade, medida em kilômetros quadrados
@@ -110,12 +49,12 @@ int main()
 
     printf("Digite a quantidade de pontos turísticos da cidade: ");
     scanf("%d", &pontosTuristicos1);
-    puts("");
+    printf("\n");
 
      // Entrada dos dados (2ª carta)
      printf("Agora vamos para o cadastro da 2ª carta. Digite os dados solicitados a seguir.\n");
      printf("Digite uma letra de 'A' a 'H': ");
-     scanf("%c", &estado2);
+     scanf(" %c", &estado2);
  
      printf("Digite a letra informada anteriormente, seguida de um número de 01 a 04: ");
      scanf("%s", codigoDaCarta2);
@@ -134,6 +73,7 @@ int main()
  
      printf("Digite a quantidade de pontos turísticos da cidade: ");
      scanf("%d", &pontosTuristicos2);
+     printf("\n");
  
 
     // Saída de Dados da 1ª carta (apresentação dos dados cadastrados na tela)
@@ -145,7 +85,7 @@ int main()
     printf("Área: %.2f km² \n", areaQuadrada1);
     printf("PIB: R$%.2f \n", pib1);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
-    puts("");
+    printf("\n");
 
     // Saída de Dados da 2ª carta (apresentação dos dados cadastrados na tela)
     printf("Carta 2:\n");
@@ -156,8 +96,7 @@ int main()
     printf("Área: %.2f km² \n", areaQuadrada2);
     printf("PIB: R$%.2f \n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
-    puts("");
+    printf("\n");
 
     return 0;
 }
-*/
