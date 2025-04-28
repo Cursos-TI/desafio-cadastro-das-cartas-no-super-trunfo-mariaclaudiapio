@@ -1,4 +1,4 @@
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main()
 {
@@ -12,8 +12,10 @@ int main()
     // Declaração das Variáveis
     char estado1; // armazena a letra escolhida pelo usuário (de A a H)
     char estado2; // armazena a letra escolhida pelo usuário (de A a H)
-    char codigoDaCarta1[3];
-    char codigoDaCarta2[3];
+    char codigoDaCarta1[3]; // armazena o código da carta (no formato letra + número de 01 a 04 - ex: A01, B03)
+    char codigoDaCarta2[3]; // armazena o código da carta (no formato letra + número de 01 a 04 - ex: A01, B03)
+    char cidade1[30];
+    char cidade2[30];
 
     // Entrada de dados (1ª carta)
     puts("Olá! Digite o que for solicitado a seguir, para preenchimento da 1ª carta.");
@@ -21,24 +23,32 @@ int main()
     scanf(" %c", &estado1);
     puts("Digite novamente a letra escolhida, seguida de um número de 01 a 04 (ex. A01, B03)");
     scanf("%s", codigoDaCarta1);
+    puts("Digite o nome da cidade:");
+    scanf("%s", cidade1);
+    puts("");
 
      // Entrada de dados (2ª carta)
-     puts("Olá! Digite o que for solicitado a seguir, para preenchimento da 2ª carta.");
+     puts("Agora é a vez do preenchimento da 2ª carta.");
      puts("Digite uma letra de 'A' a 'H' (em maiúsculo):");
      scanf(" %c", &estado2);
      puts("Digite novamente a letra escolhida, seguida de um número de 01 a 04 (ex. A01, B03)");
      scanf("%s", codigoDaCarta2);
+     puts("Digite o nome da cidade:");
+     scanf("%s", cidade2);
+     puts("");
 
      // Saída de dados (1ª carta)
      puts("Carta 1:");
      printf("Estado: %c\n", estado1);
-     printf("Código: %s\n", codigoDaCarta1);  
+     printf("Código: %s\n", codigoDaCarta1);
+     printf("Nome da Cidade: %s\n", cidade1);
+     puts("");  
 
      // Saída de dados (2ª carta)
      puts("Carta 2:");
      printf("Estado: %c\n", estado2);
-     printf("Código: %s\n", codigoDaCarta2); 
-
+     printf("Código: %s\n", codigoDaCarta2);
+     printf("Nome da Cidade: %s\n", cidade2);
 
     return 0;
 }
